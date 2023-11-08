@@ -10,17 +10,17 @@
 tmpfs  /var/cache/knot-resolver  tmpfs  rw,size=110M 0 0</p>
 <h2 id="knot-reesolve-配置">Knot Reesolve 配置</h2>
 <h3 id="vi-etcknot-resolverkresd.conf">vi /etc/knot-resolver/kresd.conf</h3>
-<p><em>监听地址</em><br>
+<p>– <em>监听地址</em><br>
 net.listen({‘127.0.0.1’,‘10.10.X.X’}, 53, { kind = ‘dns’ })<br>
-<em>关闭dnssec</em><br>
+– <em>关闭dnssec</em><br>
 trust_anchors.remove(’.’)<br>
-<em>转发</em><br>
+– <em>转发</em><br>
 policy.add(policy.all(policy.FORWARD({‘223.5.5.5’, ‘119.29.29.29’})))<br>
-<em>转发指定域名到指定dns服务器</em><br>
+– <em>转发指定域名到指定dns服务器</em><br>
 policy.add(policy.suffix(policy.FORWARD(‘119.29.29.29’),{todname(‘<a href="http://example.com">example.com</a>.’)}))<br>
-<em>缓存大小</em><br>
+– <em>缓存大小</em><br>
 cache.size = 100 * MB<br>
-<em>自定义记录</em><br>
+– <em>自定义记录</em><br>
 hints[‘<a href="http://kb.exapmle.cn">kb.exapmle.cn</a>’] = ‘10.10.x.x’<br>
 hints[‘<a href="http://excel.example.cn">excel.example.cn</a>’] = ‘10.10.x.x’</p>
 
