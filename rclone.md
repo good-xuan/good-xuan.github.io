@@ -14,7 +14,7 @@
 <p>type: webdav</p>
 </li>
 <li>
-<p>url: <a href="http://192.168.123.139:5244/dav">http://192.168.x.x:5244/dav</a></p>
+<p>url: <a href="http://192.168.x.x:5244/dav">http://192.168.x.x:5244/dav</a></p>
 </li>
 <li>
 <p>vendor: other</p>
