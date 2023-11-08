@@ -6,7 +6,7 @@
 <h1 id="rclone">rclone</h1>
 <h2 id="windows挂载">Windows挂载</h2>
 <p>D:\A-Software\rclone-v1.64.2-windows-amd64\rclone.exe mount alist:/ K: --vfs-cache-mode full  --header “Referer:<a href="https://www.aliyundrive.com/">https://www.aliyundrive.com/</a>”<br>
-使用<a href="https://nssm.cc/">nssm</a>注入服务，需要注意使用本地账号启动，不然启动不了</p>
+使用<a href="https://nssm.cc/">nssm</a>注入服务，需要注意使用<strong>本地账号</strong>启动，不然启动不了</p>
 <h2 id="rclone配置：">rclone配置：</h2>
 <p>Editing existing “alist” remote with options:</p>
 <ul>
