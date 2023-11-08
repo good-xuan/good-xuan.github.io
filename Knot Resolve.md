@@ -21,6 +21,6 @@ policy.add(policy.suffix(policy.FORWARD(‘119.29.29.29’),{todname(‘<a href=
 <em>缓存大小</em><br>
 cache.size = 100 * MB<br>
 <em>自定义记录</em><br>
-hints[‘<a href="http://kb.wscnbj.cn">kb.wscnbj.cn</a>’] = ‘10.10.x.x’<br>
-hints[‘<a href="http://excel.wscnbj.cn">excel.wscnbj.cn</a>’] = ‘10.10.x.x’</p>
+hints[‘<a href="http://kb.exapmle.cn">kb.exapmle.cn</a>’] = ‘10.10.x.x’<br>
+hints[‘<a href="http://excel.example.cn">excel.example.cn</a>’] = ‘10.10.x.x’</p>
 
